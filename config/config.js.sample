@@ -23,6 +23,13 @@ var config = {
 		{
 			module: "clock",
 			position: "top_left"
+			config: {
+				showPeriod: true,
+				showPeriodUpper: true,
+				dateFormat: "DDDD, L",
+				timezone: America/New_York
+				
+			}
 		},
 		{
 			module: "calendar",
