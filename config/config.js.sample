@@ -45,9 +45,9 @@ var config = {
 			module: "currentweather",
 			position: "top_right",
 			config: {
-				location: "New York",
-				locationID: "",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				location: "Morgantown, West Virginia ",
+				locationID: "4815352",  //ID from http://www.openweathermap.org/help/city_list.txt
+				appid: "c8dbe659339155fb8b2d0efed44bb377"
 			}
 		},
 		{
@@ -55,9 +55,9 @@ var config = {
 			position: "top_right",
 			header: "Weather Forecast",
 			config: {
-				location: "New York",
-				locationID: "5128581",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				location: "Morgantown, West Virginia",
+				locationID: "4815352",  //ID from http://www.openweathermap.org/help/city_list.txt
+				appid: "c8dbe659339155fb8b2d0efed44bb377"
 			}
 		},
 		{
