@@ -9,8 +9,8 @@ var config = {
 	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1"], // Set [] to allow all IP addresses.
 
 	language: "en",
-	timeFormat: 24,
-	units: "metric",
+	timeFormat: 12,
+	units: "imperial",
 
 	modules: [
 		{
