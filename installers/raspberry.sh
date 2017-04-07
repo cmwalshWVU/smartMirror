@@ -101,7 +101,7 @@ if [ -d "$HOME/MagicMirror" ] ; then
 fi
 
 echo -e "\e[96mCloning MagicMirror ...\e[90m"
-if git clone https://github.com/MichMich/MagicMirror.git; then 
+if git clone https://github.com/cmwalshwvu/smartMirror.git; then 
 	echo -e "\e[92mCloning MagicMirror Done!\e[0m"
 else
 	echo -e "\e[91mUnable to clone MagicMirror."
@@ -131,7 +131,7 @@ if command_exists plymouth; then
 			sudo mkdir $THEME_DIR/MagicMirror
 		fi
 
-		if sudo cp ~/MagicMirror/splashscreen/splash.png $THEME_DIR/MagicMirror/splash.png && sudo cp ~/MagicMirror/splashscreen/MagicMirror.plymouth $THEME_DIR/MagicMirror/MagicMirror.plymouth && sudo cp ~/MagicMirror/splashscreen/MagicMirror.script $THEME_DIR/MagicMirror/MagicMirror.script; then
+		if sudo cp ~/smartMirror/splashscreen/splash.png $THEME_DIR/smartMirror/splash.png && sudo cp ~/smartMirror/splashscreen/MagicMirror.plymouth $THEME_DIR/smartMirror/MagicMirror.plymouth && sudo cp ~/smartMirror/splashscreen/MagicMirror.script $THEME_DIR/smartMirror/MagicMirror.script; then
 			echo -e "\e[90mSplashscreen: Theme copied successfully.\e[0m"
 			if sudo plymouth-set-default-theme -R MagicMirror; then
 				echo -e "\e[92mSplashscreen: Changed theme to MagicMirror successfully.\e[0m"
@@ -154,7 +154,7 @@ if [[ $choice =~ ^[Yy]$ ]]
 then
     sudo npm install -g pm2
     sudo su -c "env PATH=$PATH:/usr/bin pm2 startup linux -u pi --hp /home/pi"
-    pm2 start ~/MagicMirror/installers/pm2_MagicMirror.json
+    pm2 start ~/smartMirror/installers/pm2_MagicMirror.json
     pm2 save
 fi
 
