@@ -227,6 +227,11 @@ sup {
   top: 66%;
 }
 
+.region.lower.third.right {
+  top: 66%;
+  text-align: right;
+}
+
 .region.left {
   text-align: left;
 }
