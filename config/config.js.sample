@@ -81,6 +81,15 @@ var config = {
 				showPublishDate: true
 			}
 		},
+		{
+		 	module: 'googlemap',
+			position: 'position',
+			config: {
+			       apikey: 'AIzaSyAj23TTKrPipd5F3tu3Rq9eMaa2IuaiVDc',
+			       origin: '892 Stewart Street Morgantown West Virginia',
+			       destination: '215 Don Knotts Boulevard Morgantown West Virginia',
+			   }
+		}
 	]
 
 };
