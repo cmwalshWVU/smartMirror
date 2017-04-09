@@ -83,7 +83,7 @@ var config = {
 		},
 		{
 		 	module: 'googlemap',
-			position: 'position',
+			position: 'lower_third_right',
 			config: {
 			       apikey: 'AIzaSyAj23TTKrPipd5F3tu3Rq9eMaa2IuaiVDc',
 			       origin: '892 Stewart Street Morgantown West Virginia',
