@@ -1,0 +1,98 @@
+/* Magic Mirror Config Sample
+ *
+ * By Michael Teeuw http://michaelteeuw.nl
+ * MIT Licensed.
+ */
+
+var config = {
+	port: 8080,
+	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1"], // Set [] to allow all IP addresses.
+
+	language: "en",
+	timeFormat: 12,
+	units: "imperial",
+
+	modules: [
+		{
+			module: "alert"
+		},
+		{
+			module: "updatenotification",
+			position: "top_bar"
+		},
+		{
+			module: "clock",
+			position: "top_left",
+			config: {
+				showPeriod: true,
+				showPeriodUpper: true,
+				dateFormat: "DDDD, L",
+				timezone: America/New_York
+				
+			}
+		},
+		{
+			module: "calendar",
+			header: "US Holidays",
+			position: "top_left",
+			config: {
+				calendars: [
+					{
+						symbol: "calendar-check-o ",
+						url: "webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics"
+					}
+				]
+			}
+		},
+		{
+			module: "compliments",
+			position: "lower_third"
+		},
+		{
+			module: "currentweather",
+			position: "top_right",
+			config: {
+				location: "Morgantown, West Virginia ",
+				locationID: "4815352",  //ID from http://www.openweathermap.org/help/city_list.txt
+				appid: "c8dbe659339155fb8b2d0efed44bb377"
+			}
+		},
+		{
+			module: "weatherforecast",
+			position: "top_right",
+			header: "Weather Forecast",
+			config: {
+				location: "Morgantown, West Virginia",
+				locationID: "4815352",  //ID from http://www.openweathermap.org/help/city_list.txt
+				appid: "c8dbe659339155fb8b2d0efed44bb377"
+			}
+		},
+		{
+			module: "newsfeed",
+			position: "bottom_bar",
+			config: {
+				feeds: [
+					{
+						title: "New York Times",
+						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+					}
+				],
+				showSourceTitle: true,
+				showPublishDate: true
+			}
+		},
+		{
+            module: "googlemap",
+            position: 'lower_third_right',
+            config: {
+                apikey: 'AIzaSyAj23TTKrPipd5F3tu3Rq9eMaa2IuaiVDc',
+                origin: '892 Stewart Street Morgantown West Virginia',
+                destination: '215 Don Knotts Boulevard Morgantown West Virginia'
+            }
+		}
+	]
+
+};
+
+/*************** DO NOT EDIT THE LINE BELOW ***************/
+if (typeof module !== "undefined") {module.exports = config; }
