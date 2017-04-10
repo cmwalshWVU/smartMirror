@@ -32,6 +32,21 @@ var config = {
 			}
 		},
 		{
+			module: 'email',
+          		position: 'bottom_left',
+            		header: 'Email',
+          	  	config:{
+                		user: 'cmwalsh@mix.wvu.edu',
+                		password: 'Odindog1.',
+                		host: 'imap.gmail.com',
+                		port: 993,
+                		tls: true,
+                		authTimeout: 10000,
+                		numberOfEmails: 5,
+                		fade: true
+        			},
+		},
+		{
 			module: "calendar",
 			header: "US Holidays",
 			position: "top_left",
@@ -89,6 +104,11 @@ var config = {
 			       origin: '892 Stewart Street Morgantown West Virginia',
 			       destination: '215 Don Knotts Boulevard Morgantown West Virginia',
 			   }
+		}
+		{
+		 	module: 'appleMusic',
+			position: 'bottom_right',
+			
 		}
 	]
 
