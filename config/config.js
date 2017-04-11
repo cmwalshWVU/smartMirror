@@ -82,6 +82,10 @@ var config = {
 			}
 		},
 		{
+			module: "appleMusic",
+			position: 'bottom_center',
+		},
+		{
 			module: 'email',
           		position: 'bottom_left',
             		header: 'Email',
