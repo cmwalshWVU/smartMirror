@@ -67,27 +67,27 @@ var config = {
 				appid: "c8dbe659339155fb8b2d0efed44bb377"
 			}
 		},
-		{
-			module: "newsfeed",
-			position: "bottom_bar",
-			config: {
-				feeds: [
-					{
-						title: "New York Times",
-						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
-					}
-				],
-				showSourceTitle: true,
-				showPublishDate: true
-			}
-		},
+// 		{
+// 			module: "newsfeed",
+// 			position: "bottom_bar",
+// 			config: {
+// 				feeds: [
+// 					{
+// 						title: "New York Times",
+// 						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+// 					}
+// 				],
+// 				showSourceTitle: true,
+// 				showPublishDate: true
+// 			}
+// 		},
 		{
 			module: "appleMusic",
 			position: 'bottom_center'
 		},
 		{
             module: "googlemap",
-            position: 'lower_third_right',
+            position: 'bottom_bar',
             config: {
                 apikey: 'AIzaSyAj23TTKrPipd5F3tu3Rq9eMaa2IuaiVDc',
                 origin: '892 Stewart Street Morgantown West Virginia',
