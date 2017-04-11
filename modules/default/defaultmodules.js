@@ -11,13 +11,14 @@ var defaultModules = [
 	"alert",
 	"calendar",
 	"clock",
-	"compliments",
+	//"compliments",
 	"currentweather",
 	"helloworld",
 	"newsfeed",
 	"weatherforecast",
 	"updatenotification",
-	"googlemap"
+	"googlemap",
+	"email"
 ];
 
 /*************** DO NOT EDIT THE LINE BELOW ***************/
