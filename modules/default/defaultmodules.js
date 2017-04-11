@@ -17,7 +17,7 @@ var defaultModules = [
 	"newsfeed",
 	"weatherforecast",
 	"updatenotification",
-	"goolemap"
+	"googlemap"
 ];
 
 /*************** DO NOT EDIT THE LINE BELOW ***************/
