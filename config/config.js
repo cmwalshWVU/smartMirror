@@ -9,8 +9,8 @@ var config = {
 	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1"], // Set [] to allow all IP addresses.
 
 	language: "en",
-	timeFormat: 24,
-	units: "metric",
+	timeFormat: 12,
+	units: "imperial",
 
 	modules: [
 		{
@@ -22,7 +22,14 @@ var config = {
 		},
 		{
 			module: "clock",
-			position: "top_left"
+			position: "top_left",
+			config: {
+				showPeriod: true,
+				showPeriodUpper: true,
+				dateFormat: "DDDD, L",
+				timezone: America/New_York
+				
+			}
 		},
 		{
 			module: "calendar",
@@ -45,9 +52,9 @@ var config = {
 			module: "currentweather",
 			position: "top_right",
 			config: {
-				location: "New York",
-				locationID: "",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				location: "Morgantown, West Virginia ",
+				locationID: "4815352",  //ID from http://www.openweathermap.org/help/city_list.txt
+				appid: "c8dbe659339155fb8b2d0efed44bb377"
 			}
 		},
 		{
@@ -55,9 +62,9 @@ var config = {
 			position: "top_right",
 			header: "Weather Forecast",
 			config: {
-				location: "New York",
-				locationID: "5128581",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				location: "Morgantown, West Virginia",
+				locationID: "4815352",  //ID from http://www.openweathermap.org/help/city_list.txt
+				appid: "c8dbe659339155fb8b2d0efed44bb377"
 			}
 		},
 		{
@@ -73,10 +80,19 @@ var config = {
 				showSourceTitle: true,
 				showPublishDate: true
 			}
+		},
+		{
+            		module: "googlemap",
+            		position: 'lower_third_right',
+            		config: {
+                		apikey: 'AIzaSyAj23TTKrPipd5F3tu3Rq9eMaa2IuaiVDc',
+                		origin: '892 Stewart Street Morgantown West Virginia',
+                		destination: '215 Don Knotts Boulevard Morgantown West Virginia'
+            		}
 		}
 	]
 
 };
 
 /*************** DO NOT EDIT THE LINE BELOW ***************/
-if (typeof module !== "undefined") {module.exports = config;}
+if (typeof module !== "undefined") {module.exports = config; }
