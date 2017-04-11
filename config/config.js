@@ -86,21 +86,6 @@ var config = {
 			position: 'bottom_center'
 		},
 		{
-			module: 'email',
-            position: 'bottom_left',
-            header: 'Email',
-            config: {
-                user: 'cmwalsh@mix.wvu.edu',
-                password: 'Odindog1.',
-                host: 'imap.gmail.com',
-                port: 993,
-                tls: true,
-                authTimeout: 10000,
-                numberOfEmails: 5,
-                fade: true
-            }
-		},
-		{
             module: "googlemap",
             position: 'lower_third_right',
             config: {
