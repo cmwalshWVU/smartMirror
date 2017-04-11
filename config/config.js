@@ -27,7 +27,7 @@ var config = {
 				showPeriod: true,
 				showPeriodUpper: true,
 				dateFormat: "DDDD, L",
-				timezone: America/New_York
+				timezone: "America/New_York"
 				
 			}
 		},
@@ -82,13 +82,13 @@ var config = {
 			}
 		},
 		{
-            		module: "googlemap",
-            		position: 'lower_third_right',
-            		config: {
-                		apikey: 'AIzaSyAj23TTKrPipd5F3tu3Rq9eMaa2IuaiVDc',
-                		origin: '892 Stewart Street Morgantown West Virginia',
-                		destination: '215 Don Knotts Boulevard Morgantown West Virginia'
-            		}
+            module: "googlemap",
+            position: 'lower_third_right',
+            config: {
+                apikey: 'AIzaSyAj23TTKrPipd5F3tu3Rq9eMaa2IuaiVDc',
+                origin: '892 Stewart Street Morgantown West Virginia',
+                destination: '215 Don Knotts Boulevard Morgantown West Virginia'
+            }
 		}
 	]
 
