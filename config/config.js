@@ -111,7 +111,7 @@ var config = {
 		},
         
         {
-		    module: 'phone_notification',
+            module: 'phone_notification',
             position: 'bottom_right',
             header: 'Phone Notifications',
             config: {
