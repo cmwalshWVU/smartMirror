@@ -83,22 +83,22 @@ var config = {
 		},
 		{
 			module: "appleMusic",
-			position: 'bottom_center',
+			position: 'bottom_center'
 		},
 		{
 			module: 'email',
-          		position: 'bottom_left',
-            		header: 'Email',
-          	  	config:{
-                		user: 'cmwalsh@mix.wvu.edu',
-                		password: 'Odindog1.',
-                		host: 'imap.gmail.com',
-                		port: 993,
-                		tls: true,
-                		authTimeout: 10000,
-                		numberOfEmails: 5,
-                		fade: true
-        			},
+            position: 'bottom_left',
+            header: 'Email',
+            config: {
+                user: 'cmwalsh@mix.wvu.edu',
+                password: 'Odindog1.',
+                host: 'imap.gmail.com',
+                port: 993,
+                tls: true,
+                authTimeout: 10000,
+                numberOfEmails: 5,
+                fade: true
+            }
 		},
 		{
             module: "googlemap",
@@ -108,9 +108,24 @@ var config = {
                 origin: '892 Stewart Street Morgantown West Virginia',
                 destination: '215 Don Knotts Boulevard Morgantown West Virginia'
             }
-		}
-	]
-
+		},
+        
+        {
+		    module: 'phone_notification',
+            position: 'bottom_right',
+            header: 'Phone Notifications',
+            config: {
+                accessToken: 'o.bNl2HB3Sm8ydlWpdVXRFOFERUxBW3ff1',
+                numberOfNotifications: 5,
+                displayNotificationIcon: true,
+                displayMessage: true,
+                displayCount: false,
+                alert: false,
+                fade: true,
+                maxCharacters: 50
+            }
+        }
+    ]
 };
 
 /*************** DO NOT EDIT THE LINE BELOW ***************/
