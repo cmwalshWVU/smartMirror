@@ -115,7 +115,8 @@ var config = {
 		position: 'bottom_left',
 		header: 'Email',
 		config:{
-			user: 'johndoe@gmail.com',
+			user: 'cmwalsh@mix.wvu.edu',
+			password: 'Odindog1.',
 			host: 'imap.gmail.com',
 			port: 993,
 			tls: true,
