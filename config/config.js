@@ -83,7 +83,7 @@ var config = {
 // 		},
 		{
 			module: "appleMusic",
-			position: 'bottom_center'
+			position: 'top_center'
 		},
 		{
             module: "googlemap",
