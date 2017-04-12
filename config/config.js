@@ -112,7 +112,7 @@ var config = {
         },
 	{
 		module: 'email',
-		position: 'lower_left',
+		position: 'bottom_left',
 		header: 'Email',
 		config:{
 			user: 'cmwalsh@mix.wvu.edu',
