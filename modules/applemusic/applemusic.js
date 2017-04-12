@@ -1,4 +1,4 @@
-Module.register("appleMusic", {
+Module.register("applemusic", {
     // Default module config.
 	
     getDom: function() {
