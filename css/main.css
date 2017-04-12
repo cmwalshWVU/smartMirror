@@ -9,10 +9,10 @@ html {
 }
 
 body {
-  margin: 20px;
+  margin: 60px;
   position: absolute;
-  height: calc(100% - 40px);
-  width: calc(100% - 40px);
+  height: calc(100% - 120px);
+  width: calc(100% - 120px);
   background: #000;
   color: #aaa;
   font-family: "Roboto Condensed", sans-serif;
@@ -114,11 +114,11 @@ sup {
  */
 
 .module {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .region.bottom .module {
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 0;
 }
 
@@ -138,10 +138,10 @@ sup {
 
 .region.fullscreen {
   position: absolute;
-  top: -20px;
-  left: -20px;
-  right: -20px;
-  bottom: -20px;
+  top: -60px;
+  left: -60px;
+  right: -60px;
+  bottom: -60px;
   pointer-events: none;
 }
 
@@ -158,7 +158,7 @@ sup {
 }
 
 .region.top .container {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .region.top .container:empty {
@@ -186,7 +186,7 @@ sup {
 }
 
 .region.bottom .container {
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .region.bottom .container:empty {
