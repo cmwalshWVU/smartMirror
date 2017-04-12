@@ -199,6 +199,10 @@ sup {
   bottom: 100%;
 }
 
+.region.bottom.left {
+  right: 75% 
+}
+
 .region.bar {
   width: 100%;
   text-align: center;
