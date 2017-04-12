@@ -109,7 +109,21 @@ var config = {
                 fade: true,
                 maxCharacters: 50
             }
-        }
+        },
+	{
+		module: 'email',
+		position: 'bottom_left',
+		header: 'Email',
+		config:{
+			user: 'johndoe@gmail.com',
+			host: 'imap.gmail.com',
+			port: 993,
+			tls: true,
+			authTimeout: 10000,
+			numberOfEmails: 5,
+			fade: true
+		}
+	}
     ]
 };
 
