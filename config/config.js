@@ -82,7 +82,7 @@ var config = {
 // 			}
 // 		},
 		{
-			module: "appleMusic",
+			module: "applemusic",
 			position: 'top_center'
 		},
 		{
