@@ -176,9 +176,12 @@ sup {
 }
 
 .region.top.right,
-.region.top.left,
-.region.top.center {
+.region.top.left {
   top: 100%;
+}
+
+.region.top.center {
+  bottom: 0;
 }
 
 .region.bottom {
@@ -200,7 +203,6 @@ sup {
 }
 
 .region.bottom.left {
-  height: 33%;
   width: 30%; 
 }
 
