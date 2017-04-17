@@ -82,12 +82,12 @@ var config = {
 // 			}
 // 		},
 		{
-			module: "appleMusic",
-			position: 'bottom_center'
+			module: "applemusic",
+			position: 'top_center'
 		},
 		{
             module: "googlemap",
-            position: 'bottom_bar',
+            position: 'bottom_center',
             config: {
                 apikey: 'AIzaSyAj23TTKrPipd5F3tu3Rq9eMaa2IuaiVDc',
                 origin: '892 Stewart Street Morgantown West Virginia',
@@ -109,7 +109,22 @@ var config = {
                 fade: true,
                 maxCharacters: 50
             }
-        }
+        },
+	{
+		module: 'email',
+		position: 'bottom_left',
+		header: 'Email',
+		config:{
+			user: 'cmwalsh@mix.wvu.edu',
+			password: 'Odindog1.',
+			host: 'imap.gmail.com',
+			port: 993,
+			tls: true,
+			authTimeout: 10000,
+			numberOfEmails: 5,
+			fade: true
+		}
+	}
     ]
 };
 

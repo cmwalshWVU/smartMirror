@@ -176,9 +176,12 @@ sup {
 }
 
 .region.top.right,
-.region.top.left,
-.region.top.center {
+.region.top.left {
   top: 100%;
+}
+
+.region.top.center {
+  bottom: 0;
 }
 
 .region.bottom {
@@ -197,6 +200,10 @@ sup {
 .region.bottom.center,
 .region.bottom.left {
   bottom: 100%;
+}
+
+.region.bottom.left {
+  width: 30%; 
 }
 
 .region.bar {
@@ -230,6 +237,11 @@ sup {
 .region.lower.third.right {
   top: 66%;
   text-align: right;
+}
+
+.region.lower.third.left {
+  top: 66%;
+  text-align: left;
 }
 
 .region.left {

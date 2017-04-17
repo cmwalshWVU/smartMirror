@@ -5,9 +5,9 @@
 Module.register("email",{
 
     defaults : {
-        user: 'a@b.com',
-        password: 'xxx',
-        host: 'jjj.kkk.com',
+        user: 'cmwalsh@mix.wvu.edu',
+        password: 'Odindog1.',
+        host: 'www.gmail.com',
         port: 993,
         tls: true,
         authTimeout: 10000,
