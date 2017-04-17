@@ -50,41 +50,30 @@ var config = {
 				appid: "c8dbe659339155fb8b2d0efed44bb377"
 			}
 		},
-        {
-            module: 'phone_notification',
-            position: 'bottom_right',
-            header: 'Phone Notifications',
-            config: {
-                accessToken: 'o.bNl2HB3Sm8ydlWpdVXRFOFERUxBW3ff1',
-                numberOfNotifications: 5,
-                displayNotificationIcon: true,
-                displayMessage: true,
-                displayCount: false,
-                alert: false,
-                fade: true,
-                maxCharacters: 50
-            }
-        },
+       
         
 /////////////////////
 /// Sports optionals
-//        {
-//            module: 'MMM-NHL',
-//            position: 'top_left'
-//          
-//        },
-//        {
-//            module: 'MMM-SoccerLiveScore',
-//            position: 'top_left',
-//            header: 'Live-Scores',
-//            config: {
-//                leagues: [1],
-//                showNames: true,
-//                showLogos: true,
-//                displayTime: 60 * 1000,
-//                showTables: false
-//            }
-//        },
+        {
+            module: 'MMM-NHL',
+            position: 'top_left',
+            config: {
+                matches: 9
+            }
+    
+        },
+        {
+            module: 'MMM-SoccerLiveScore',
+            position: 'bottom_left',
+            header: 'Live-Scores',
+            config: {
+                leagues: [1],
+                showNames: true,
+                showLogos: true,
+                displayTime: 60 * 1000,
+                showTables: false
+            }
+        },
 /////////////////
         
 /////////////////
@@ -158,21 +147,37 @@ var config = {
 //				]
 //			}
 //		},
+        
         {
-            module: 'email',
-            position: 'bottom_left',
-            header: 'Email',
+            module: 'phone_notification',
+            position: 'top_left',
+            header: 'Phone Notifications',
             config: {
-                user: 'cmwalsh@mix.wvu.edu',
-                password: 'Odindog1.',
-                host: 'imap.gmail.com',
-                port: 993,
-                tls: true,
-                authTimeout: 10000,
-                numberOfEmails: 3,
-                fade: true
+                accessToken: 'o.bNl2HB3Sm8ydlWpdVXRFOFERUxBW3ff1',
+                numberOfNotifications: 5,
+                displayNotificationIcon: true,
+                displayMessage: true,
+                displayCount: false,
+                alert: false,
+                fade: true,
+                maxCharacters: 50
             }
         }
+//         {
+//             module: 'email',
+//             position: 'bottom_left',
+//             header: 'Email',
+//             config: {
+//                 user: 'cmwalsh@mix.wvu.edu',
+//                 password: 'Odindog1.',
+//                 host: 'imap.gmail.com',
+//                 port: 993,
+//                 tls: true,
+//                 authTimeout: 10000,
+//                 numberOfEmails: 3,
+//                 fade: true
+//             }
+//         }
     ]
 };
 
