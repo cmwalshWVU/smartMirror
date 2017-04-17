@@ -56,7 +56,7 @@ var config = {
 /// Sports optionals
         {
             module: 'MMM-NHL',
-            position: 'top_left',
+            position: 'bottom_right',
             config: {
                 matches: 9
             }
