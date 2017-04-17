@@ -32,56 +32,6 @@ var config = {
 			}
 		},
         {
-            module: 'MMM-NHL',
-            position: 'top_left'
-          
-        },
-        {
-            module: 'MMM-SoccerLiveScore',
-            position: 'top_left',
-            header: 'Live-Scores',
-            config: {
-                leagues: [1],
-                showNames: true,
-                showLogos: true,
-                displayTime: 60 * 1000,
-                showTables: false
-            }
-        },
-        {
-            module: 'MMM-bitcoin',
-            position: 'top_right',
-            config: {
-                updateInterval: 60000 // update interval in milliseconds
-            }
-        },
-        {
-            module: 'MMM-Stock',
-            position: 'top_left',
-            config: {
-                companies: ['MSFT', 'GOOG', 'ORCL', 'FB'],  
-                currency: 'USD' 
-            }
-        },
-
-//		{
-//			module: "calendar",
-//			header: "US Holidays",
-//			position: "top_left",
-//			config: {
-//				calendars: [
-//					{
-//						symbol: "calendar-check-o ",
-//						url: "webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics"
-//					}
-//				]
-//			}
-//		},
-//		{
-//			module: "compliments",
-//			position: "lower_third"
-//		},
-		{
 			module: "currentweather",
 			position: "top_right",
 			config: {
@@ -100,34 +50,6 @@ var config = {
 				appid: "c8dbe659339155fb8b2d0efed44bb377"
 			}
 		},
-// 		{
-// 			module: "newsfeed",
-// 			position: "bottom_bar",
-// 			config: {
-// 				feeds: [
-// 					{
-// 						title: "New York Times",
-// 						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
-// 					}
-// 				],
-// 				showSourceTitle: true,
-// 				showPublishDate: true
-// 			}
-// 		},
-		{
-			module: "applemusic",
-			position: 'top_center'
-		},
-		{
-            module: "googlemap",
-            position: 'bottom_center',
-            config: {
-                apikey: 'AIzaSyAj23TTKrPipd5F3tu3Rq9eMaa2IuaiVDc',
-                origin: '892 Stewart Street Morgantown West Virginia',
-                destination: '215 Don Knotts Boulevard Morgantown West Virginia'
-            }
-		},
-        
         {
             module: 'phone_notification',
             position: 'bottom_right',
@@ -143,6 +65,99 @@ var config = {
                 maxCharacters: 50
             }
         },
+        
+/////////////////////
+/// Sports optionals
+//        {
+//            module: 'MMM-NHL',
+//            position: 'top_left'
+//          
+//        },
+//        {
+//            module: 'MMM-SoccerLiveScore',
+//            position: 'top_left',
+//            header: 'Live-Scores',
+//            config: {
+//                leagues: [1],
+//                showNames: true,
+//                showLogos: true,
+//                displayTime: 60 * 1000,
+//                showTables: false
+//            }
+//        },
+/////////////////
+        
+/////////////////
+// money opionals
+        {
+            module: 'MMM-bitcoin',
+            position: 'top_right',
+            config: {
+                updateInterval: 60000 // update interval in milliseconds
+            }
+        },
+        {
+            module: 'MMM-Stock',
+            position: 'top_left',
+            config: {
+                companies: ['MSFT', 'GOOG', 'ORCL', 'FB'],  
+                currency: 'USD' 
+            }
+        },
+
+
+//		{
+//			module: "compliments",
+//			position: "lower_third"
+//		},
+		
+// 		{
+// 			module: "newsfeed",
+// 			position: "bottom_bar",
+// 			config: {
+// 				feeds: [
+// 					{
+// 						title: "New York Times",
+// 						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+// 					}
+// 				],
+// 				showSourceTitle: true,
+// 				showPublishDate: true
+// 			}
+// 		},
+        
+//////////////////
+//music-travel optionals
+		{
+			module: "applemusic",
+			position: 'top_center'
+		},
+		{
+            module: "googlemap",
+            position: 'bottom_center',
+            config: {
+                apikey: 'AIzaSyAj23TTKrPipd5F3tu3Rq9eMaa2IuaiVDc',
+                origin: '892 Stewart Street Morgantown West Virginia',
+                destination: '215 Don Knotts Boulevard Morgantown West Virginia'
+            }
+		},
+        
+        
+//////////////
+// business optionals
+//		{
+//			module: "calendar",
+//			header: "US Holidays",
+//			position: "top_left",
+//			config: {
+//				calendars: [
+//					{
+//						symbol: "calendar-check-o ",
+//						url: "webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics"
+//					}
+//				]
+//			}
+//		},
         {
             module: 'email',
             position: 'bottom_left',
