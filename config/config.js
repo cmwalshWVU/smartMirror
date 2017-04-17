@@ -31,23 +31,56 @@ var config = {
 				
 			}
 		},
-		{
-			module: "calendar",
-			header: "US Holidays",
-			position: "top_left",
-			config: {
-				calendars: [
-					{
-						symbol: "calendar-check-o ",
-						url: "webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics"
-					}
-				]
-			}
-		},
-		{
-			module: "compliments",
-			position: "lower_third"
-		},
+        {
+            module: 'MMM-NHL',
+            position: 'top_left'
+          
+        },
+        {
+            module: 'MMM-SoccerLiveScore',
+            position: 'top_left',
+            header: 'Live-Scores',
+            config: {
+                leagues: [1],
+                showNames: true,
+                showLogos: true,
+                displayTime: 60 * 1000,
+                showTables: false
+            }
+        },
+        {
+            module: 'MMM-bitcoin',
+            position: 'top_right',
+            config: {
+                updateInterval: 60000 // update interval in milliseconds
+            }
+        },
+        {
+            module: 'MMM-Stock',
+            position: 'top_left',
+            config: {
+                companies: ['MSFT', 'GOOG', 'ORCL', 'FB'],  
+                currency: 'USD' 
+            }
+        },
+
+//		{
+//			module: "calendar",
+//			header: "US Holidays",
+//			position: "top_left",
+//			config: {
+//				calendars: [
+//					{
+//						symbol: "calendar-check-o ",
+//						url: "webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics"
+//					}
+//				]
+//			}
+//		},
+//		{
+//			module: "compliments",
+//			position: "lower_third"
+//		},
 		{
 			module: "currentweather",
 			position: "top_right",
@@ -110,21 +143,21 @@ var config = {
                 maxCharacters: 50
             }
         },
-	{
-		module: 'email',
-		position: 'bottom_left',
-		header: 'Email',
-		config:{
-			user: 'cmwalsh@mix.wvu.edu',
-			password: 'Odindog1.',
-			host: 'imap.gmail.com',
-			port: 993,
-			tls: true,
-			authTimeout: 10000,
-			numberOfEmails: 5,
-			fade: true
-		}
-	}
+        {
+            module: 'email',
+            position: 'bottom_left',
+            header: 'Email',
+            config: {
+                user: 'cmwalsh@mix.wvu.edu',
+                password: 'Odindog1.',
+                host: 'imap.gmail.com',
+                port: 993,
+                tls: true,
+                authTimeout: 10000,
+                numberOfEmails: 3,
+                fade: true
+            }
+        }
     ]
 };
 
