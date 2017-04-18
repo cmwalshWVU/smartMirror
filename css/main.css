@@ -178,6 +178,7 @@ sup {
 .region.top.right,
 .region.top.left {
   top: 100%;
+  width: 30%;
 }
 
 .region.top.center {
