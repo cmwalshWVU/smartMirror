@@ -31,7 +31,14 @@ var config = {
 				
 			}
 		},
-        {
+		{
+            		module: 'MMM-bitcoin',
+            		position: 'top_left',
+            		config: {
+               			updateInterval: 60000 // update interval in milliseconds
+            		}
+        	},
+        	{
 			module: "currentweather",
 			position: "top_right",
 			config: {
@@ -56,7 +63,7 @@ var config = {
 /// Sports optionals
         {
             module: 'MMM-NHL',
-            position: 'bottom_left',
+            position: 'bottom_right',
             config: {
                 matches: 9
             }
@@ -80,7 +87,7 @@ var config = {
 // money opionals
         {
             module: 'MMM-bitcoin',
-            position: 'top_right',
+            position: 'top_left',
             config: {
                 updateInterval: 60000 // update interval in milliseconds
             }
@@ -100,20 +107,20 @@ var config = {
 //			position: "lower_third"
 //		},
 		
-// 		{
-// 			module: "newsfeed",
-// 			position: "bottom_bar",
-// 			config: {
-// 				feeds: [
-// 					{
-// 						title: "New York Times",
-// 						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
-// 					}
-// 				],
-// 				showSourceTitle: true,
-// 				showPublishDate: true
-// 			}
-// 		},
+		{
+			module: "newsfeed",
+			position: "bottom_bar",
+			config: {
+				feeds: [
+					{
+						title: "New York Times",
+						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+					}
+				],
+				showSourceTitle: true,
+				showPublishDate: true
+			}
+		},
         
 //////////////////
 //music-travel optionals
@@ -123,7 +130,7 @@ var config = {
 		},
 		{
             module: "googlemap",
-            position: 'bottom_center',
+            position: 'top_right',
             config: {
                 apikey: 'AIzaSyAj23TTKrPipd5F3tu3Rq9eMaa2IuaiVDc',
                 origin: '892 Stewart Street Morgantown West Virginia',
