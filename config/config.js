@@ -31,13 +31,6 @@ var config = {
 				
 			}
 		},
-		{
-            		module: 'MMM-bitcoin',
-            		position: 'top_left',
-            		config: {
-               			updateInterval: 60000 // update interval in milliseconds
-            		}
-        	},
         	{
 			module: "currentweather",
 			position: "top_right",
