@@ -374,7 +374,7 @@ var config = {
 				feeds: [
 					{
 						title: "New York Times",
-						url: "http://http://www.espn.com/espn/rss/news"
+						url: "http://rss.nytimes.com/services/xml/rss/nyt/Sports.xml"
 					}
 				],
 				showSourceTitle: true,
