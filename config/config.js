@@ -287,7 +287,7 @@ var config = {
                 tls: true,
                 authTimeout: 10000,
                 numberOfEmails: 3,
-                fade: true
+                fade: false
             }
         }
     ]
