@@ -276,20 +276,20 @@ var businessConfig = {
             }
         },
         {
-             module: 'email',
-             position: 'bottom_right',
-             header: 'Email',
-             config: {
-                 user: 'cmwalsh@mix.wvu.edu',
-                 password: 'Odindog1.',
-                 host: 'imap.gmail.com',
-                 port: 993,
-                 tls: true,
-                 authTimeout: 10000,
-                 numberOfEmails: 3,
-                 fade: true
-             }
-         }
+            module: 'email',
+            position: 'bottom_right',
+            header: 'Email',
+            config: {
+                user: 'cmwalsh@mix.wvu.edu',
+                password: 'Odindog1.',
+                host: 'imap.gmail.com',
+                port: 993,
+                tls: true,
+                authTimeout: 10000,
+                numberOfEmails: 3,
+                fade: true
+            }
+        }
     ]
 };
 
@@ -320,14 +320,14 @@ var sportsConfig = {
 				
 			}
 		},
-        	{
-			module: "currentweather",
-			position: "top_right",
-			config: {
-				location: "Morgantown, West Virginia ",
-				locationID: "4815352",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "c8dbe659339155fb8b2d0efed44bb377"
-			}
+        {
+            module: "currentweather",
+            position: "top_right",
+            config: {
+                location: "Morgantown, West Virginia ",
+                locationID: "4815352",  //ID from http://www.openweathermap.org/help/city_list.txt
+                appid: "c8dbe659339155fb8b2d0efed44bb377"
+            }
 		},
 		{
 			module: "weatherforecast",
