@@ -142,7 +142,7 @@ var defconfig = {
     ]
 };
 
-var businessConfig = {
+var config = {
 	port: 8080,
 	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1"], // Set [] to allow all IP addresses.
 
@@ -293,7 +293,7 @@ var businessConfig = {
     ]
 };
 
-var config = {
+var SportsConfig = {
 	port: 8080,
 	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1"], // Set [] to allow all IP addresses.
 
