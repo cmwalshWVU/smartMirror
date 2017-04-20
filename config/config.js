@@ -262,7 +262,7 @@ var config = {
         
         {
             module: 'phone_notification',
-            position: 'top_left',
+            position: 'bottom_right',
             header: 'Phone Notifications',
             config: {
                 accessToken: 'o.bNl2HB3Sm8ydlWpdVXRFOFERUxBW3ff1',
@@ -277,7 +277,7 @@ var config = {
         },
         {
             module: 'email',
-            position: 'bottom_right',
+            position: 'top_left',
             header: 'Email',
             config: {
                 user: 'cmwalsh@mix.wvu.edu',
