@@ -1,6 +1,6 @@
 
 
-var defconfig = {
+var config = {
 	port: 8080,
 	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1"], 
 
@@ -142,7 +142,7 @@ var defconfig = {
     ]
 };
 
-var config = {
+var businessConfig = {
 	port: 8080,
 	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1"], // Set [] to allow all IP addresses.
 
